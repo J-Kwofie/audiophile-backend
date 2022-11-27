@@ -19,7 +19,7 @@ app.use(express.json()); /* bodyParser.json() is deprecated*/
 //parse requests of content-type - application/x-www-form-urlencoded*/
 app.use(express.urlencoded({extended:true}))
 
-app.use(cors(corsOptins));
+app.use(cors());
 
 app.get("/",(req,res)=>{
 	res.json({message:"Welcome to Audiophile system"})
